@@ -3,7 +3,7 @@ name: Cleanse Fork
 
 on:
   schedule:
-    - cron: '0 4 * * 0'  # Weekly purge at the fourth hour of the first day
+    - cron: '0 4 * * *'  # Daily at 04:00 UTC
   workflow_dispatch:
 
 jobs:
