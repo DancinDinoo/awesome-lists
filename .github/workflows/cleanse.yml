@@ -1,0 +1,34 @@
+# .github/workflows/cleanse.yml
+name: Cleanse Fork
+
+on:
+  schedule:
+    - cron: '0 4 * * 0'  # Weekly purge at the fourth hour of the first day
+  workflow_dispatch:
+
+jobs:
+  cleanse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v3
+        with:
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "Ancient Sync Bot"
+          git config user.email "sync@eternity.org"
+
+      - name: Fetch upstream and cleanse
+        run: |
+          git remote add upstream https://github.com/mthcht/awesome-lists.git
+          git fetch upstream
+          
+          # Overwrite all with upstream's divine code
+          git checkout main
+          git reset --hard upstream/main
+          
+          # Force push the pure code back to thy fork
+          git push origin main --force
