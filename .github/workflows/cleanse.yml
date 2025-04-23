@@ -1,16 +1,13 @@
-# .github/workflows/cleanse.yml
-name: Cleanse Fork
+name: Sync Fork
 
 on:
   schedule:
     - cron: '0 4 * * *'  # Daily at 04:00 UTC
-  workflow_dispatch:
+  workflow_dispatch: # Allow manual invocation
 
 jobs:
-  cleanse:
+  sync:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write  # Grant the power to push changes
     steps:
       - name: Checkout fork
         uses: actions/checkout@v3
@@ -20,17 +17,12 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config user.name "Ancient Sync Bot"
-          git config user.email "sync@eternity.org"
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
 
-      - name: Fetch upstream and cleanse
+      - name: Add upstream
         run: |
-          git remote add upstream https://github.com/mthcht/awesome-lists.git
+          git remote add upstream https://github.com/DancinDinoo/awesome-lists.git
           git fetch upstream
-          
-          # Overwrite all with upstream's divine code
-          git checkout main
-          git reset --hard upstream/main
-          
-          # Force push the pure code back to thy fork
-          git push origin main --force
+          git merge upstream/main --allow-unrelated-histories || true
+          git push origin main
