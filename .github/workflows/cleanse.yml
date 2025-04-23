@@ -9,6 +9,8 @@ on:
 jobs:
   cleanse:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Grant the power to push changes
     steps:
       - name: Checkout fork
         uses: actions/checkout@v3
