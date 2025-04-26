@@ -1671,10 +1671,11 @@ rule Trojan_Win32_ClickFix_ZD_2147937008_0
         $x_1_52 = "Human: r" wide //weight: 1
         $x_1_53 = "Human: CAPTCHA" wide //weight: 1
         $x_1_54 = "Human - CAPTCHA" wide //weight: 1
-        $x_1_55 = "Microsoft Windows: Fix Internet DNS Service reconnect" wide //weight: 1
-        $x_1_56 = "Restart DNS service in the Microsoft Windows system" wide //weight: 1
-        $x_1_57 = "netstatuscheck" wide //weight: 1
-        $n_5000_58 = "msedgewebview2.exe" wide //weight: -5000
+        $x_1_55 = "Guard: Answer" wide //weight: 1
+        $x_1_56 = "Microsoft Windows: Fix Internet DNS Service reconnect" wide //weight: 1
+        $x_1_57 = "Restart DNS service in the Microsoft Windows system" wide //weight: 1
+        $x_1_58 = "netstatuscheck" wide //weight: 1
+        $n_5000_59 = "msedgewebview2.exe" wide //weight: -5000
     condition:
         (filesize < 20MB) and
         (not (any of ($n*))) and
