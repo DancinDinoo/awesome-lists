@@ -613,8 +613,6 @@ dest_ip,dest_nt_domain,dest_port
 2a02:ed04:3581:3::f001,fi-hel-wg-103.relays.mullvad.net,51820
 193.138.7.197,fi-hel-wg-104.relays.mullvad.net,51820
 2a02:ed04:3581:4::f001,fi-hel-wg-104.relays.mullvad.net,51820
-45.134.79.67,fr-bod-wg-001.relays.mullvad.net,51820
-2a06:3040:4:610::f001,fr-bod-wg-001.relays.mullvad.net,51820
 45.134.79.97,fr-bod-wg-002.relays.mullvad.net,51820
 2a06:3040:4:610::f101,fr-bod-wg-002.relays.mullvad.net,51820
 138.199.15.162,fr-mrs-wg-001.relays.mullvad.net,51820
