@@ -201,3 +201,24 @@ rule Trojan_MSIL_CrimsonRat_ACR_2147941080_0
         (all of ($x*))
 }
 
+rule Trojan_MSIL_CrimsonRat_AMS_2147941541_0
+{
+    meta:
+        author = "defender2yara"
+        detection_name = "Trojan:MSIL/CrimsonRat.AMS!MTB"
+        threat_id = "2147941541"
+        type = "Trojan"
+        platform = "MSIL: .NET intermediate language scripts"
+        family = "CrimsonRat"
+        severity = "Critical"
+        info = "MTB: Microsoft Threat Behavior"
+        signature_type = "SIGNATURE_TYPE_PEHSTR_EXT"
+        threshold = "2"
+        strings_accuracy = "Low"
+    strings:
+        $x_2_1 = {0a 00 06 0d 16 13 04 2b 37 09 11 04 9a 0b 00 07 6f ?? 00 00 0a 2c 0e 07 6f ?? 00 00 0a 18 fe 01 16 fe 01 2b 01 17 0c 08}  //weight: 2, accuracy: Low
+    condition:
+        (filesize < 20MB) and
+        (all of ($x*))
+}
+
