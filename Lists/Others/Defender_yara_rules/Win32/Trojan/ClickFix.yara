@@ -323,8 +323,10 @@ rule Trojan_Win32_ClickFix_J_2147932433_0
         $x_1_5 = ".mp4" wide //weight: 1
         $x_1_6 = ".mp3" wide //weight: 1
         $x_1_7 = ".flv" wide //weight: 1
+        $n_100_8 = "msedgewebview2.exe" wide //weight: -100
     condition:
         (filesize < 20MB) and
+        (not (any of ($n*))) and
         (
             ((4 of ($x_10_*) and 1 of ($x_1_*))) or
             (all of ($x*))
