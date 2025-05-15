@@ -1,9 +1,9 @@
-rule Trojan_Win32_CopyRemot_A_2147941467_0
+rule Trojan_Win32_CopyRemot_A_2147941480_0
 {
     meta:
         author = "defender2yara"
         detection_name = "Trojan:Win32/CopyRemot.A"
-        threat_id = "2147941467"
+        threat_id = "2147941480"
         type = "Trojan"
         platform = "Win32: Windows 32-bit platform"
         family = "CopyRemot"
@@ -19,12 +19,12 @@ rule Trojan_Win32_CopyRemot_A_2147941467_0
         (all of ($x*))
 }
 
-rule Trojan_Win32_CopyRemot_B_2147941468_0
+rule Trojan_Win32_CopyRemot_B_2147941481_0
 {
     meta:
         author = "defender2yara"
         detection_name = "Trojan:Win32/CopyRemot.B"
-        threat_id = "2147941468"
+        threat_id = "2147941481"
         type = "Trojan"
         platform = "Win32: Windows 32-bit platform"
         family = "CopyRemot"
