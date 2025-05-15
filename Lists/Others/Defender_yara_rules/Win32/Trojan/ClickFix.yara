@@ -3745,3 +3745,27 @@ rule Trojan_Win32_ClickFix_YAR_2147941336_0
         (all of ($x*))
 }
 
+rule Trojan_Win32_ClickFix_DBT_2147941458_0
+{
+    meta:
+        author = "defender2yara"
+        detection_name = "Trojan:Win32/ClickFix.DBT!MTB"
+        threat_id = "2147941458"
+        type = "Trojan"
+        platform = "Win32: Windows 32-bit platform"
+        family = "ClickFix"
+        severity = "Critical"
+        info = "MTB: Microsoft Threat Behavior"
+        signature_type = "SIGNATURE_TYPE_CMDHSTR_EXT"
+        threshold = "130"
+        strings_accuracy = "High"
+    strings:
+        $x_100_1 = "powershell" wide //weight: 100
+        $x_10_2 = ")|%{$" wide //weight: 10
+        $x_10_3 = "+=[char]($_+" wide //weight: 10
+        $x_10_4 = ")};.(" wide //weight: 10
+    condition:
+        (filesize < 20MB) and
+        (all of ($x*))
+}
+
