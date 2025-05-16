@@ -4545,3 +4545,28 @@ rule Trojan_Win32_Neoreblamy_NFT_2147941542_0
         (all of ($x*))
 }
 
+rule Trojan_Win32_Neoreblamy_CK_2147941563_0
+{
+    meta:
+        author = "defender2yara"
+        detection_name = "Trojan:Win32/Neoreblamy.CK!MTB"
+        threat_id = "2147941563"
+        type = "Trojan"
+        platform = "Win32: Windows 32-bit platform"
+        family = "Neoreblamy"
+        severity = "Critical"
+        info = "MTB: Microsoft Threat Behavior"
+        signature_type = "SIGNATURE_TYPE_PEHSTR_EXT"
+        threshold = "5"
+        strings_accuracy = "High"
+    strings:
+        $x_1_1 = {89 55 f4 6b 4d f4}  //weight: 1, accuracy: High
+        $x_1_2 = {2b c8 03 4d e0}  //weight: 1, accuracy: High
+        $x_1_3 = {2b f8 8b 45}  //weight: 1, accuracy: High
+        $x_1_4 = {ff ff 59 59 8b 4d}  //weight: 1, accuracy: High
+        $x_1_5 = {2b c8 03 4d e4}  //weight: 1, accuracy: High
+    condition:
+        (filesize < 20MB) and
+        (all of ($x*))
+}
+
