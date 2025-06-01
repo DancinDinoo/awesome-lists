@@ -51,7 +51,7 @@ bitsquatting,crosdstrike.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.clou
 bitsquatting,croudstrike.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.cloudflare.com
 bitsquatting,crovdstrike.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.cloudflare.com
 bitsquatting,crowd3trike.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.cloudflare.com
-bitsquatting,crowdctrike.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.cloudflare.com
+bitsquatting,crowdctrike.com,,,,eric.ns.cloudflare.com
 bitsquatting,crowdqtrike.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.cloudflare.com
 bitsquatting,crowdrtrike.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.cloudflare.com
 bitsquatting,crowds4rike.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.cloudflare.com
@@ -7788,9 +7788,9 @@ replacement,xrowdstrike.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.cloud
 subdomain,c.rowdstrike.com,,,,
 subdomain,cr.owdstrike.com,,,,
 subdomain,cro.wdstrike.com,,,,
-subdomain,crow.dstrike.com,44.213.46.149,,,nsg1.namebrightdns.com
 subdomain,crowd.strike.com,,,,
 subdomain,crowdst.rike.com,!ServFail,!ServFail,,!ServFail
+subdomain,crow.dstrike.com,44.213.46.149,,,nsg1.namebrightdns.com
 subdomain,crowds.trike.com,64.190.63.222,,localhost,ns1.sedoparking.com
 subdomain,crowdstr.ike.com,,,,
 subdomain,crowdstri.ke.com,,,,
