@@ -2694,3 +2694,24 @@ rule Trojan_Win64_Lazy_SFD_2147942779_0
         (all of ($x*))
 }
 
+rule Trojan_Win64_Lazy_AZLY_2147942839_0
+{
+    meta:
+        author = "defender2yara"
+        detection_name = "Trojan:Win64/Lazy.AZLY!MTB"
+        threat_id = "2147942839"
+        type = "Trojan"
+        platform = "Win64: Windows 64-bit platform"
+        family = "Lazy"
+        severity = "Critical"
+        info = "MTB: Microsoft Threat Behavior"
+        signature_type = "SIGNATURE_TYPE_PEHSTR_EXT"
+        threshold = "2"
+        strings_accuracy = "High"
+    strings:
+        $x_2_1 = {66 89 44 24 6b 88 44 24 6d 66 89 44 24 6e 88 44 24 70 66 89 44 24 71 88 44 24 73 66 89 44 24 74 88 44 24 76 66 89 44 24 77 88 44 24 79 66 89 44 24 7a 88 44 24 7c 89 7c 24 64 0f 10 03 0f 29 45 d0 89 7c 24 34 c6 44 24 68 01 48 8d 55 50 48 8d 4c 24 20}  //weight: 2, accuracy: High
+    condition:
+        (filesize < 20MB) and
+        (all of ($x*))
+}
+
