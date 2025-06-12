@@ -273,6 +273,63 @@ rule TrojanDownloader_Win32_Zlob_16998_9
         family = "Zlob"
         severity = "16"
         signature_type = "SIGNATURE_TYPE_PEHSTR_EXT"
+        threshold = "36"
+        strings_accuracy = "Low"
+    strings:
+        $x_10_1 = "InternetReadFile" ascii //weight: 10
+        $x_10_2 = "OpenEventW" ascii //weight: 10
+        $x_10_3 = "Netbios" ascii //weight: 10
+        $x_3_4 = {68 00 74 00 74 00 70 00 3a 00 2f 00 2f 00 74 00 68 00 65 00 6e 00 6d 00 65 00 74 00 77 00 6f 00 72 00 6b 00 63 00 6f 00 2e 00 63 00 6f 00 6d 00 2f 00 64 00 77 00 2e 00 70 00 68 00 70 00}  //weight: 3, accuracy: Low
+        $x_2_5 = "?code=00-00-00-00-00-00&hash=" wide //weight: 2
+        $x_1_6 = "bx18dxv.dat" wide //weight: 1
+        $x_1_7 = "bx18dxv.dat" ascii //weight: 1
+        $x_2_8 = "MyBITSTrans_new" wide //weight: 2
+    condition:
+        (filesize < 20MB) and
+        (
+            ((3 of ($x_10_*) and 2 of ($x_2_*) and 2 of ($x_1_*))) or
+            ((3 of ($x_10_*) and 1 of ($x_3_*) and 1 of ($x_2_*) and 1 of ($x_1_*))) or
+            ((3 of ($x_10_*) and 1 of ($x_3_*) and 2 of ($x_2_*))) or
+            (all of ($x*))
+        )
+}
+
+rule TrojanDownloader_Win32_Zlob_16998_10
+{
+    meta:
+        author = "defender2yara"
+        detection_name = "TrojanDownloader:Win32/Zlob"
+        threat_id = "16998"
+        type = "TrojanDownloader"
+        platform = "Win32: Windows 32-bit platform"
+        family = "Zlob"
+        severity = "16"
+        signature_type = "SIGNATURE_TYPE_PEHSTR_EXT"
+        threshold = "36"
+        strings_accuracy = "High"
+    strings:
+        $x_10_1 = "/search.php?qq=%s" ascii //weight: 10
+        $x_10_2 = {43 4c 41 46 2e 64 6c 6c 00 44 6c 6c 43 61 6e 55 6e 6c 6f 61 64 4e 6f 77 00 44 6c 6c 47 65 74 43 6c 61 73 73 4f 62 6a 65 63 74 00 44 6c 6c 52 65 67 69 73 74 65 72 53 65 72 76 65 72 00}  //weight: 10, accuracy: High
+        $x_5_3 = "http://auto.search.msn.com/response.asp?MT=" wide //weight: 5
+        $x_5_4 = "/search.php?qq=%s" wide //weight: 5
+        $x_5_5 = {72 65 6c 65 61 73 65 00}  //weight: 5, accuracy: High
+        $x_1_6 = "{5DDE5591-A8AB-4897-93EF-1E4E943F85A7}" ascii //weight: 1
+    condition:
+        (filesize < 20MB) and
+        (all of ($x*))
+}
+
+rule TrojanDownloader_Win32_Zlob_16998_11
+{
+    meta:
+        author = "defender2yara"
+        detection_name = "TrojanDownloader:Win32/Zlob"
+        threat_id = "16998"
+        type = "TrojanDownloader"
+        platform = "Win32: Windows 32-bit platform"
+        family = "Zlob"
+        severity = "16"
+        signature_type = "SIGNATURE_TYPE_PEHSTR_EXT"
         threshold = "640"
         strings_accuracy = "Low"
     strings:
@@ -299,7 +356,7 @@ rule TrojanDownloader_Win32_Zlob_16998_9
         )
 }
 
-rule TrojanDownloader_Win32_Zlob_16998_10
+rule TrojanDownloader_Win32_Zlob_16998_12
 {
     meta:
         author = "defender2yara"
@@ -328,7 +385,7 @@ rule TrojanDownloader_Win32_Zlob_16998_10
         )
 }
 
-rule TrojanDownloader_Win32_Zlob_16998_11
+rule TrojanDownloader_Win32_Zlob_16998_13
 {
     meta:
         author = "defender2yara"
@@ -375,7 +432,7 @@ rule TrojanDownloader_Win32_Zlob_16998_11
         )
 }
 
-rule TrojanDownloader_Win32_Zlob_16998_12
+rule TrojanDownloader_Win32_Zlob_16998_14
 {
     meta:
         author = "defender2yara"
