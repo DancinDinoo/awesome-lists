@@ -101,7 +101,6 @@ as_number,rir,domain,cc,asname
 59683,ripencc,vip-net.net,RU,iridatelecom
 59753,ripencc,vaultdweller.net,EE,XHOSTIS-AS
 59841,ripencc,eurotelecom.info,MD,PUBLIC-DNS-ASN
-60458,ripencc,sered.net,ES,ASN-XTUDIONET
 60581,ripencc,eurotelecom.info,MD,REBDACONS-AS
 60842,ripencc,62yun.com,RU,HUIZE-HOLDINGS-AS
 61432,ripencc,link-host.com,UA,VAIZ-AS
@@ -266,7 +265,6 @@ as_number,rir,domain,cc,asname
 206744,ripencc,eurotelecom.info,MD,COLOCATION
 206750,ripencc,eurotelecom.info,MD,TRANZIT
 206847,ripencc,eurotelecom.info,MD,TRANZIT
-207046,ripencc,sered.net,ES,redservicio
 207084,ripencc,ncryptd.net,GB,NCRYPTD
 207088,ripencc,adoard.com,RO,ADOARD
 207159,ripencc,eurotelecom.info,MD,Hartum_TV_SRL
@@ -327,7 +325,6 @@ as_number,rir,domain,cc,asname
 213389,ripencc,netip.com.ua,UA,ASPODOLSK
 213438,ripencc,colocatel.com,SC,colocatel-inc
 213511,ripencc,vonie.net,TR,VSVK
-213622,ripencc,baremetal.ae,AE,FALCON
 213659,ripencc,eksenbilisim.com.tr,TR,SEYMEN-CIFTCI
 213676,ripencc,eksenbilisim.com.tr,TR,NEO_INTERNET
 213725,ripencc,03ai.org,GB,UK-03AI
@@ -354,7 +351,7 @@ as_number,rir,domain,cc,asname
 214820,ripencc,infiniroute.io,US,SUMMITARC-AS
 214860,ripencc,wensliai.com,HK,STELLAR-GLOW-SERVICES
 214927,ripencc,psb.hosting,RU,PSB-AS
-214940,ripencc,pfcloud.io,DE,KPRONET
+214940,ripencc,virtualine.org,GB,KPRONET
 214943,ripencc,railnet,US,RAILNET
 215117,ripencc,hosterdaddy.com,IN,HOSTERDADDY
 215127,ripencc,410-teapot,GB,TEAPOT
@@ -382,7 +379,6 @@ as_number,rir,domain,cc,asname
 329325,afrinic,maxko.org,HR,Maxko-for-Gaming-Development
 398638,arin,jellydigital.net,US,JELLYDIGITAL
 398741,arin,62yun.com,RU,AS-VERTEXLINK-01
-398770,arin,greatcommunications.net,US,TC
 399979,arin,493networking.cc,US,AS-493NETWORKING
 400018,arin,seacom.cc,US,ATT-ENTERPRISES-LLC
 400171,arin,alphainfolab.com,IN,AS-AINFO
@@ -393,5 +389,4 @@ as_number,rir,domain,cc,asname
 401115,arin,ekabi.net,US,EKABI
 401116,arin,nybula.com,US,NYBULA
 401120,arin,cheapy.host,US,CHEAPY-HOST
-401502,arin,baremetal.ae,AE,AS-FALCON
 401616,arin,prv8net,PA,PNL
