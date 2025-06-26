@@ -925,6 +925,8 @@ dest_ip,dest_nt_domain,dest_port
 2a03:1b20:4:f011::f501,se-sto-wg-006.relays.mullvad.net,51820
 185.65.135.70,se-sto-wg-007.relays.mullvad.net,51820
 2a03:1b20:4:f011::b07f,se-sto-wg-007.relays.mullvad.net,51820
+185.65.135.71,se-sto-wg-008.relays.mullvad.net,51820
+2a03:1b20:4:f011::f701,se-sto-wg-008.relays.mullvad.net,51820
 185.195.233.69,se-sto-wg-009.relays.mullvad.net,51820
 2a03:1b20:4:f011::a09f,se-sto-wg-009.relays.mullvad.net,51820
 185.195.233.70,se-sto-wg-010.relays.mullvad.net,51820
@@ -935,8 +937,6 @@ dest_ip,dest_nt_domain,dest_port
 2a03:1b20:4:f011::fb01,se-sto-wg-012.relays.mullvad.net,51820
 185.195.233.67,se-sto-wg-013.relays.mullvad.net,51820
 2a03:1b20:4:f011::fe01,se-sto-wg-013.relays.mullvad.net,51820
-185.195.233.68,se-sto-wg-014.relays.mullvad.net,51820
-2a03:1b20:4:f011::fd01,se-sto-wg-014.relays.mullvad.net,51820
 89.37.63.10,se-sto-wg-201.relays.mullvad.net,51820
 2a02:6ea0:1508:1::f001,se-sto-wg-201.relays.mullvad.net,51820
 89.37.63.66,se-sto-wg-202.relays.mullvad.net,51820
