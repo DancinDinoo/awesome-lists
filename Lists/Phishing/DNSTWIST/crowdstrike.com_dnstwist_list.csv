@@ -10,7 +10,6 @@ addition,crowdstrike6.com,,,,
 addition,crowdstrike7.com,,,,
 addition,crowdstrike8.com,,,,
 addition,crowdstrike9.com,,,,
-addition,crowdstriker.com,44.232.173.249,,,launch1.spaceship.net
 addition,crowdstrikea.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.cloudflare.com
 addition,crowdstrikeb.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.cloudflare.com
 addition,crowdstrikec.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.cloudflare.com
@@ -28,6 +27,7 @@ addition,crowdstriken.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.cloudfl
 addition,crowdstrikeo.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.cloudflare.com
 addition,crowdstrikep.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.cloudflare.com
 addition,crowdstrikeq.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.cloudflare.com
+addition,crowdstriker.com,,,,launch1.spaceship.net
 addition,crowdstrikes.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.cloudflare.com
 addition,crowdstriket.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.cloudflare.com
 addition,crowdstrikeu.com,,,inbound-smtp.us-east-1.amazonaws.com,eric.ns.cloudflare.com
